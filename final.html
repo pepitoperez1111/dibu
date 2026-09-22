@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Girasoles de Ensueño</title>
+<style>
+*,::after,::before{padding:0;margin:0;box-sizing:border-box}:root{--dark-color:#2b013e;--petal-color-light:#FFC300;--petal-color-dark:#DAA520;--center-color:#654321;--leaf-color-main:#2a7221;--leaf-color-dark:#195113;--stem-color-light:#4caf50;--stem-color-dark:#388e3c;--stem-growth:0;--leaf-growth:0;--flower-growth:0}body{display:flex;align-items:flex-end;justify-content:center;min-height:100vh;background-color:var(--dark-color);overflow:hidden;perspective:1000px}.night{position:fixed;left:50%;top:0;transform:translateX(-50%);width:100%;height:100%;filter:blur(.1vmin);background-image:radial-gradient(ellipse at top,transparent 0,var(--dark-color)),radial-gradient(ellipse at bottom,var(--dark-color),rgba(145,233,255,.1)),repeating-linear-gradient(220deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 19px,transparent 19px,transparent 22px),linear-gradient(90deg,#301e67,#03001c)}.flowers{position:relative;transform:scale(.9)}.flower{position:absolute;bottom:10vmin;transform-origin:bottom center;z-index:10;--fl-speed:0.8s}.flower--1{animation:moving-flower-1 4s linear infinite}.flower--1 .flower__line{height:70vmin}.flower--2{left:50%;transform:rotate(20deg);animation:moving-flower-2 4s linear infinite}.flower--2 .flower__line{height:60vmin}.flower--3{left:50%;transform:rotate(-15deg);animation:moving-flower-3 4s linear infinite}.flower--3 .flower__line{height:55vmin}.flower__leafs{position:relative;transform:scale(var(--flower-growth));transform-origin:bottom center;transition:transform .2s ease-out}.flower__leafs::after{content:"";position:absolute;left:0;top:0;transform:translate(-50%,-100%);width:8vmin;height:8vmin;background-color:var(--petal-color-light);filter:blur(10vmin)}.flower__leaf{position:absolute;bottom:0;left:50%;width:4vmin;height:12vmin;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background-image:linear-gradient(to top,var(--petal-color-dark),var(--petal-color-light));transform-origin:bottom center;opacity:.95;box-shadow:inset 0 0 1vmin rgba(255,255,255,.3);transform:translateX(-50%)}.flower__leaf:first-child{transform:translateX(-50%) rotate(0) translateY(-2vmin) scale(1.1)}.flower__leaf:nth-child(2){transform:translateX(-50%) rotate(45deg) translateY(-2vmin)}.flower__leaf:nth-child(3){transform:translateX(-50%) rotate(90deg) translateY(-2vmin) scale(1.1)}.flower__leaf:nth-child(4){transform:translateX(-50%) rotate(135deg) translateY(-2vmin)}.flower__leaf:nth-child(5){transform:translateX(-50%) rotate(180deg) translateY(-2vmin) scale(1.1)}.flower__leaf:nth-child(6){transform:translateX(-50%) rotate(225deg) translateY(-2vmin)}.flower__leaf:nth-child(7){transform:translateX(-50%) rotate(270deg) translateY(-2vmin) scale(1.1)}.flower__leaf:nth-child(8){transform:translateX(-50%) rotate(315deg) translateY(-2vmin)}.flower__center{position:absolute;left:50%;top:-2vmin;transform:translateX(-50%);width:6vmin;height:6vmin;border-radius:50%;background-color:var(--center-color);background-image:repeating-radial-gradient(circle at center,rgba(0,0,0,.2) 0,rgba(0,0,0,.2) 1px,transparent 1px,transparent 5px);box-shadow:inset 0 0 1vmin rgba(0,0,0,.4);z-index:1}.flower__line{width:1.5vmin;background-image:linear-gradient(to left,rgba(0,0,0,.2),transparent,rgba(255,255,255,.2)),linear-gradient(to top,transparent 10%,var(--stem-color-dark),var(--stem-color-light));box-shadow:inset 0 0 2px rgba(0,0,0,.5);height:calc(1% * var(--stem-growth));transition:height .2s ease-out}.flower__line__leaf{--w:7vmin;--h:calc(var(--w) + 2vmin);position:absolute;top:20%;left:120%;width:var(--w);height:var(--h);border-radius:40% 60% 30% 70%/70% 50% 50% 30%;background-image:linear-gradient(to top,var(--leaf-color-dark),var(--leaf-color-main));transition:transform .2s ease-out}.flower__line__leaf--1{transform:rotate(70deg) rotateY(30deg) scale(var(--leaf-growth));transform-origin:left}.flower__line__leaf--2{top:45%;transform:rotate(70deg) rotateY(30deg) scale(var(--leaf-growth));transform-origin:left}.flower__line__leaf--3,.flower__line__leaf--4{left:-560%;top:20%;transform:rotate(-70deg) rotateY(30deg) scale(var(--leaf-growth));transform-origin:right}.flower__line__leaf--4{top:40%}.flower__light{position:absolute;bottom:0;width:1vmin;height:1vmin;background-color:#fffb00;border-radius:50%;filter:blur(.2vmin);animation:light-ans 4s linear infinite backwards}.flower__light:nth-child(odd){background-color:#ffd966}.flower__light--1{left:-2vmin;animation-delay:1s}.flower__light--2{left:3vmin;animation-delay:.5s}.flower__light--3{left:-6vmin;animation-delay:.3s}.flower__light--4{left:6vmin;animation-delay:.9s}.flower__light--5{left:-1vmin;animation-delay:1.5s}.flower__light--6{left:-4vmin;animation-delay:3s}.flower__light--7{left:3vmin;animation-delay:2s}.flower__light--8{left:-6vmin;animation-delay:3.5s}@keyframes light-ans{0%{opacity:0;transform:translateY(0)}25%{opacity:1;transform:translateY(-5vmin) translateX(-2vmin)}50%{opacity:1;transform:translateY(-15vmin) translateX(2vmin);filter:blur(.2vmin)}75%{transform:translateY(-20vmin) translateX(-2vmin);filter:blur(.2vmin)}100%{transform:translateY(-30vmin);opacity:0;filter:blur(1vmin)}}@keyframes moving-flower-1{0%,100%{transform:rotate(2deg)}50%{transform:rotate(-2deg)}}@keyframes moving-flower-2{0%,100%{transform:rotate(18deg)}50%{transform:rotate(14deg)}}@keyframes moving-flower-3{0%,100%{transform:rotate(-18deg)}50%{transform:rotate(-20deg) rotateY(-10deg)}}.not-loaded *{animation-play-state:paused!important}.poem-card{position:absolute;top:50%;right:5vw;transform:translateY(-50%);width:400px;max-width:90vw;padding:25px;background-color:rgba(0,0,0,.4);border-radius:15px;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(5px);box-shadow:0 8px 32px 0 rgba(0,0,0,.3);z-index:20}#poem-text{color:#f0f0f0;font-family:'Courier New',Courier,monospace;font-size:1.1rem;line-height:1.6;white-space:pre-wrap}#poem-text::after{content:'|';margin-left:5px;opacity:1;animation:blink-caret .75s step-end infinite}@keyframes blink-caret{from,to{opacity:1}50%{opacity:0}}#poem-text.typing-done::after{animation:none;opacity:0}.star{position:fixed;top:0;left:0;width:2px;height:2px;background-color:#fff;border-radius:50%;box-shadow:0 0 5px #fff;animation:twinkle 5s infinite}@keyframes twinkle{0%,100%{opacity:.5;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}.shooting-star{position:fixed;top:-40px;left:50%;width:2px;height:2px;background-color:#fff;border-radius:50%;animation:shoot 10s linear infinite;animation-delay:3s}.shooting-star::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);width:100px;height:1px;background:linear-gradient(to left,#fff,transparent)}@keyframes shoot{0%{transform:translate(0,0);opacity:1}100%{transform:translate(100vw,100vh);opacity:0}}@media (max-width:1024px){.poem-card{top:5vh;left:50%;right:auto;transform:translateX(-50%);width:90%;max-width:550px}.flowers{transform:scale(.8);bottom:-5vmin}}@media (max-width:768px){.poem-card{top:2vh;left:50%;right:auto;transform:translateX(-50%);width:90vw}.flowers{transform:scale(.75);bottom:-10vmin}}@media (max-width:480px){.flowers{transform:scale(.7)}#poem-text{font-size:.9rem}}
+
+/* === ESTILOS PARA FRASES FUGACES MULTIDIRECCIONALES === */
+.shooting-texts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1; /* Detrás de la flor (10) y la carta (20) */
+  overflow: hidden;
+}
+
+.shooting-text {
+  position: absolute;
+  color: rgba(255, 235, 205, 0.9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-shadow: 
+    0 0 8px rgba(255, 223, 137, 0.8),
+    0 0 15px rgba(255, 195, 0, 0.5);
+  filter: blur(1.2px);
+  opacity: 0;
+  animation: shootTextDynamic 6s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+@keyframes shootTextDynamic {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(var(--rot, 0deg)) scale(0.7);
+    filter: blur(3px);
+  }
+  15% {
+    opacity: 0.95;
+    filter: blur(0.8px);
+  }
+  70% {
+    opacity: 0.7;
+    filter: blur(1.5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx, 20vw), var(--dy, 20vh)) rotate(var(--rot, 0deg)) scale(1.1);
+    filter: blur(4px);
+  }
+}
+</style>
+<style>
+.tlanex-brand-badge{position:fixed!important;right:15px;bottom:15px;z-index:2147483000!important;display:inline-flex!important;align-items:center;gap:6px;padding:8px 14px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:15px;font-weight:600;line-height:1;color:#fff!important;background:rgba(0,0,0,.55);border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.25);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);opacity:.9}@media (max-width:480px){.tlanex-brand-badge{font-size:13px;padding:6px 11px;right:10px;bottom:10px}}
+</style>
+</head>
+<body class="not-loaded">
+<div class="night"><div class="shooting-star"></div></div>
+
+<!-- Contenedor para las frases fugaces -->
+<div class="shooting-texts-container" id="shooting-texts"></div>
+
+<div class="flowers">
+  <div class="flower flower--1">
+    <div class="flower__leafs flower__leafs--1">
+      <div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div>
+      <div class="flower__center"></div>
+      <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+    </div>
+    <div class="flower__line">
+      <div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div>
+    </div>
+  </div>
+  <div class="flower flower--2">
+    <div class="flower__leafs flower__leafs--2">
+      <div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div>
+      <div class="flower__center"></div>
+      <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+    </div>
+    <div class="flower__line">
+      <div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div>
+    </div>
+  </div>
+  <div class="flower flower--3">
+    <div class="flower__leafs flower__leafs--3">
+      <div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div><div class="flower__leaf"></div>
+      <div class="flower__center"></div>
+      <div class="flower__light flower__light--1"></div><div class="flower__light flower__light--2"></div><div class="flower__light flower__light--3"></div><div class="flower__light flower__light--4"></div><div class="flower__light flower__light--5"></div><div class="flower__light flower__light--6"></div><div class="flower__light flower__light--7"></div><div class="flower__light flower__light--8"></div>
+    </div>
+    <div class="flower__line">
+      <div class="flower__line__leaf flower__line__leaf--1"></div><div class="flower__line__leaf flower__line__leaf--2"></div><div class="flower__line__leaf flower__line__leaf--3"></div><div class="flower__line__leaf flower__line__leaf--4"></div>
+    </div>
+  </div>
+</div>
+<div class="poem-card"><p id="poem-text"></p></div>
+
+<script>
+function _0x23df(){const t=["__proto__","top","298077gizJmG"," toda ause","Como un gi","212656PJUvlO","Eres el so","l que guía","body","busca la a","style","querySelec","a,\n","forEach","1810942RDLybj","florezco s",".flower","rowth",'rn this")(',"27pxerEQ","ById","max","1359110SfcylG","la luz que","nction() ","gría.","log","1466418gsIgqF","nto,\n","ement"," desvanece","documentEl","ncia,\n","wth","to.\n","poem-text","o mi suste","5EfLfNN","2627776ykPbac","tir tu ale"," mi existe","classList","trace","table","constructo","tor","random","toFixed","prototype","vmin","--flower-g","remove",'ctor("retu',"lborada,\n","left","length","rdín de mi","innerHTML","ncia.\n\n","apply","getElement","el en cada","ine","r encuentr","setPropert","rasol que ","star","info","640149RRQcCJ",".night","height","Y en el ja","ent","bind","console","elay","className","olo al sen","En tu calo",".flower__l","not-loaded","torAll"," melancolí"," vuelve ha","toString","createElem","animationD","return (fu","error","--leaf-gro"," pensamien","onload","un faro fi","add","2IYAbjp"];return(_0x23df=function(){return t})()}
+const _0x382a68=_0x1c67;
+function _0x1c67(t,e){const n=_0x23df();return _0x1c67=function(t,e){return n[t-=207]},_0x1c67(t,e)}
+!function(){const t=_0x1c67,e=_0x23df();for(;;)try{if(225200===parseInt(t(293))/1*(parseInt(t(290))/2)+parseInt(t(264))/3+parseInt(t(296))/4*(-parseInt(t(233))/5)+parseInt(t(223))/6+parseInt(t(210))/7+-parseInt(t(234))/8+-parseInt(t(215))/9*(parseInt(t(218))/10))break;e.push(e.shift())}catch(t){e.push(e.shift())}}();
+const _0x2bed83=function(){let t=!0;return function(e,n){const o=t?function(){if(n){const t=n[_0x1c67(255)](e,arguments);return n=null,t}}:function(){};return t=!1,o}}(),
+_0x2df717=_0x2bed83(this,function(){const t=_0x1c67;let e;try{e=Function(t(283)+t(220)+"{}.constru"+t(248)+t(214)+" ));")()}catch(t){e=window}const n=e.console=e[t(270)]||{},o=[t(222),"warn",t(263),t(284),"exception",t(239),t(238)];for(let e=0;e<o[t(251)];e++){const r=_0x2bed83[t(240)+"r"][t(244)][t(269)](_0x2bed83),c=o[e],a=n[c]||r;r[t(291)]=_0x2bed83[t(269)](_0x2bed83),r[t(280)]=a.toString.bind(a),n[c]=r}});
+_0x2df717();
+
+window[_0x382a68(287)]=()=>{
+  const t=_0x382a68,
+  e=setTimeout(()=>{
+    const t=_0x1c67;
+    document[t(299)].classList[t(247)](t(276)),clearTimeout(e)
+  },1e3),
+  n="CADA GIRASOL QUE VES AQUÍ ES UN LATIDO DE MI CORAZÓN, ASÍ COMO EL SOL ILUMINA LOS CAMPOS, TÚ ILUMINAS MI VIDA.\n\nQUE ESTAS FLORES TE RECUERDEN QUE ERES ESPECIAL PARA MI.\n\nTE QUIERO MUCHO MAFER <3",
+  o=document[t(256)+t(216)](t(231)),
+  r=document[t(227)+t(225)];
+  let c=0;
+  const a={"flower--1":70,"flower--2":60,"flower--3":55};
+  !function e(){
+    const s=t;
+    if(c<n[s(251)]){
+      o[s(253)]+=n.charAt(c),c++;
+      const t=c/n[s(251)],l=t,i=Math.max(0,(t-.2)/.8),u=Math[s(217)](0,(t-.5)/.5);
+      document["querySelec"+s(277)](s(212)).forEach(t=>{
+        const e=s,n=a[t[e(237)][1]]*l;
+        t[e(207)+e(241)](e(275)+"ine")[e(301)][e(266)]=n+e(245)
+      }),
+      r[s(301)].setProperty(s(285)+s(229),i[s(243)](2)),
+      r[s(301)][s(260)+"y"]("--flower-growth",u[s(243)](2)),
+      setTimeout(e,80)
+    }else o[s(237)][s(289)]("typing-done"),
+    r[s(301)][s(260)+"y"](s(285)+s(229),1),
+    r[s(301)][s(260)+"y"](s(246)+s(213),1),
+    document[s(207)+"torAll"](s(212))[s(209)](t=>{
+      const e=s,n=a[t[e(237)][1]];
+      t[e(207)+"tor"](e(275)+e(258)).style[e(266)]=n+e(245)
+    })
+  }(),
+  function(){
+    const e=t,n=document["querySelec"+e(241)](e(265));
+    for(let t=0;t<100;t++){
+      const t=document[e(281)+e(268)]("div");
+      t[e(272)]=e(262),
+      t[e(301)][e(292)]=100*Math[e(242)]()+"%",
+      t[e(301)][e(250)]=100*Math[e(242)]()+"%",
+      t[e(301)][e(282)+e(271)]=5*Math[e(242)]()+"s",
+      n.appendChild(t)
+    }
+  }()
+}
+
+/* === SCRIPT MEJORADO PARA DIVERSAS DIRECCIONES Y BORDES === */
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('shooting-texts');
+  const phrases = [
+    "Todo estará bien",
+    "Preciosa",
+    "Hermosa",
+    "Te quiero mucho",
+    "Te quiero",
+    "Mi amor",
+    "Siempre juntos",
+    "Eres mi sol",
+    "Nunca cambies"
+  ];
+
+  function createShootingText() {
+    const el = document.createElement('div');
+    el.classList.add('shooting-text');
+    el.innerText = phrases[Math.floor(Math.random() * phrases.length)];
+
+    // Selección aleatoria del origen (0: Arriba, 1: Derecha, 2: Abajo, 3: Izquierda)
+    const side = Math.floor(Math.random() * 4);
+    let startX, startY, dx, dy, rot;
+
+    switch (side) {
+      case 0: // Desde arriba hacia abajo-izquierda/derecha
+        startX = Math.random() * 80 + 10;
+        startY = -5;
+        dx = (Math.random() - 0.5) * 60;
+        dy = Math.random() * 50 + 40;
+        rot = (Math.random() - 0.5) * 40 - 15;
+        break;
+      case 1: // Desde la derecha hacia la izquierda
+        startX = 105;
+        startY = Math.random() * 80 + 10;
+        dx = -(Math.random() * 50 + 40);
+        dy = (Math.random() - 0.5) * 60;
+        rot = (Math.random() - 0.5) * 40 - 20;
+        break;
+      case 2: // Desde abajo hacia arriba
+        startX = Math.random() * 80 + 10;
+        startY = 105;
+        dx = (Math.random() - 0.5) * 60;
+        dy = -(Math.random() * 50 + 40);
+        rot = (Math.random() - 0.5) * 40 + 15;
+        break;
+      case 3: // Desde la izquierda hacia la derecha
+        startX = -15;
+        startY = Math.random() * 80 + 10;
+        dx = Math.random() * 50 + 40;
+        dy = (Math.random() - 0.5) * 60;
+        rot = (Math.random() - 0.5) * 40 + 20;
+        break;
+    }
+
+    el.style.left = startX + 'vw';
+    el.style.top = startY + 'vh';
+    el.style.setProperty('--dx', dx + 'vw');
+    el.style.setProperty('--dy', dy + 'vh');
+    el.style.setProperty('--rot', rot + 'deg');
+
+    const duration = Math.random() * 3 + 4.5; // Duración de 4.5s a 7.5s
+    el.style.animationDuration = duration + 's';
+
+    container.appendChild(el);
+
+    setTimeout(() => {
+      el.remove();
+    }, duration * 1000);
+  }
+
+  createShootingText();
+  setInterval(createShootingText, 1500);
+});
+</script>
+
+<div class="tlanex-brand-badge">&#10084; HECHO CON AMOR DIBU</div>
+
+<script>
+function _0x743c(n,t){const e=_0x624b();return(_0x743c=function(n,t){return e[n-=434]})(n,t)}
+function _0x624b(){const n=["t:center; ","las herram","info","length","<p>Por fav",'rn this")(',"s:center; ","warn","198522DPpWEn",'="display:',"o no permi","keydown","return (fu",".</p></div","toLowerCas","178088zsrkFp","nter; font","desarrollo","vertical","table","Firebug","self","outerHeigh","error",'ns-serif;"',"ctrlKey","2407932KWjtBy","><h1>Acces","key","8yPWGFA","prototype","ault","console","ify-conten","vh; flex-d",'ctor("retu',"log","preventDef","stener","93052YVQlAw","105BiWqjH","irection:c","orientatio","addEventLi","contextmen","toString","height:100","top","2yXdKjp","ientas de ","1691910QKQVJZ","bind","horizontal","832074AvmjYz","olumn; tex","test","-family:sa","or cierra ","trace","F12","isInitiali","t-align:ce","1875041lQzHmR","tido.</h1>","<div style","zed","open"];return(_0x624b=function(){return n})()}
+(function(){const n=_0x743c,t=_0x624b();for(;;)try{if(252834===parseInt(n(486))/1+parseInt(n(452))/2*(-parseInt(n(457))/3)+-parseInt(n(443))/4*(-parseInt(n(444))/5)+parseInt(n(479))/6+-parseInt(n(466))/7*(parseInt(n(500))/8)+parseInt(n(497))/9+-parseInt(n(454))/10)break;t.push(t.shift())}catch(n){t.push(t.shift())}})(),
+function(){const n=_0x743c,t=function(){let n=!0;return function(t,e){const o=n?function(){if(e){const n=e.apply(t,arguments);return e=null,n}}:function(){};return n=!1,o}}();t(this,function(){const n=_0x743c,e=function(){const n=_0x743c;let t;try{t=Function(n(483)+"nction() {}.constru"+n(439)+n(476)+" ));")()}catch(n){t=window}return t}(),o=e[n(436)]=e.console||{},r=[n(440),n(478),n(473),n(494),"exception",n(490),n(462)];for(let e=0;e<r[n(474)];e++){const i=t.constructor[n(434)][n(455)](t),c=r[e],s=o[c]||i;i.__proto__=t[n(455)](t),i.toString=s[n(449)][n(455)](s),o[c]=i}})(),document[n(447)+n(442)](n(448)+"u",function(t){const e=n;t[e(441)+e(435)]()}),document[n(447)+n(442)](n(482),function(t){const e=n;t[e(496)]&&["c","u","s","p"].includes(t.key[e(485)+"e"]())&&t[e(441)+e(435)](),t[e(499)]===e(463)&&t[e(441)+e(435)]()});const e={open:!1,orientation:null};setInterval(()=>{const t=n;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i[t(459)](navigator.userAgent))return;if(window[t(492)]!==window[t(451)])return;const o=window.outerWidth-window.innerWidth>160,r=window[t(493)+"t"]-window.innerHeight>160,i=t(o?489:456);r&&o||!(window[t(491)]&&window[t(491)].chrome&&window[t(491)].chrome[t(464)+t(469)]||o||r)?(e[t(470)]=!1,e[t(446)+"n"]=null):((!e[t(470)]||e[t(446)+"n"]!==i)&&(document.body.innerHTML=t(468)+t(480)+"flex; just"+t(437)+t(471)+"align-item"+t(477)+t(450)+t(438)+t(445)+t(458)+t(465)+t(487)+t(460)+t(495)+t(498)+t(481)+t(467)+t(475)+t(461)+t(472)+t(453)+t(488)+t(484)+">"),e.open=!0,e[t(446)+"n"]=i)},1e3)}()
+</script>
+</body>
+</html>
